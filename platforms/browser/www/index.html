@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+        <title>Music World App</title>
+
+        <!--Import Google Icon Font -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!--Import CSS -->
+        <link type="text/css" rel="stylesheet" href="css/materialize.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+    	<!--div class="preloader-wrapper big active">
+    		<div class="spinner-layer spinner-blue-only">
+			  	<div class="circle-clipper left">
+		        	<div class="circle"></div>
+		      	</div>
+	      	</div>
+      	</div-->
+
+        <nav class="nav-extended red">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">Nome</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="side-nav" id="mobile-demo">
+
+                    <li>
+                        <div class="user-view center">
+                            <div class="background" style="background-image: url(img/es-1.jpg);">
+                            </div>
+                            <a href="#!user">
+                                <img class="circle" src="img/profile.jpg">
+                            </a>
+                            <a href="#!name">
+                                <span class="white-text name">Lucas Craveiro Paes</span>
+                            </a>
+                            <a href="#!email">
+                                <span class="white-text email">lucascraveiropaes@gmail.com</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#inicio">
+                            <i class="material-icons">home</i> Início
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <i class="material-icons">person</i> Artistas
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <i class="material-icons">album</i> Álbuns
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <i class="material-icons">list</i> Playlists
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <i class="material-icons">file_download</i> Downloads
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <i class="material-icons">settings</i> Configurações
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="nav-content">
+                <ul class="tabs tabs-transparent">
+                    <li class="tab">
+                        <a class="active" href="#inicio">Início</a>
+                    </li>
+                    <li class="tab">
+                        <a href="#alta">Em Alta</a>
+                    </li>
+                    <li class="tab">
+                        <a href="#recomendados">Recomendados</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Aba Início -->
+        <div id="inicio" class="col s12">
+			<div class="carousel" style="height: 250px;">
+			    <a class="carousel-item" href="#one!">
+			    	<img src="img/mg-1.jpg">
+			    </a>
+			    <a class="carousel-item" href="#two!">
+			    	<img src="img/aa-1.jpg">
+			    </a>
+			    <a class="carousel-item" href="#three!">
+			    	<img src="img/es-1.jpg">
+			    </a>
+			    <a class="carousel-item" href="#four!">
+			    	<img src="img/metallica-1.jpg">
+			    </a>
+			    <a class="carousel-item" href="#five!">
+			    	<img src="img/bj-1.jpg">
+			    </a>
+		  	</div>
+        </div>
+
+        <!-- Aba Em Alta -->
+        <div id="alta">
+            <div class="row">
+                <div class="col s12 card-list">
+
+                    <!-- Primeiro Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/es-1.jpg">
+
+                            <span class="card-title">Divide</span>
+
+                            <a class="btn-floating halfway-fab waves-effect waves-light red">
+                                <i class="material-icons">add</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p>Novo álbum de Ed Sheeran</p>
+                        </div>
+                    </div>
+
+                    <!-- Segundo Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/aa-1.jpg">
+
+                            <span class="card-title">The Black</span>
+
+                            <a class="btn-floating halfway-fab waves-effect waves-light red">
+                                <i class="material-icons">add</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p>Novo álbum do Asking Alexandria</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aba Recomendados -->
+        <div id="recomendados">
+            <div class="row">
+                <div class="col s12 card-list">
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/aa-1.jpg">
+
+                            <span class="card-title">The Black</span>
+
+                            <a class="btn-floating halfway-fab waves-effect waves-light red">
+                                <i class="material-icons">add</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p>Novo álbum de Ed Sheeran</p>
+                        </div>
+                    </div>
+
+                	<h4 class="header">Ed Sheeran</h4>
+		            <div class="card">
+		                <div class="card-image">
+                            <img src="img/es-1.jpg">
+		                </div>
+		            </div>
+	            </div>
+            </div>
+        </div>
+
+        <!-- Mini Player -->
+    	<div class="fixed-action-btn toolbar">
+		    <a class="btn-floating btn-large red">
+		      	<i class="large material-icons">equalizer</i>
+		    </a>
+		    <ul>
+		      	<li class="waves-effect waves-light cover-prev"
+		      		style="background-image: url(img/es-1.jpg);">
+		      	</li>
+
+		      	<li class="waves-effect waves-light">
+		      		<a href="#!">
+			      		<i class="material-icons">fast_rewind</i>
+			      	</a>
+		      	</li>
+
+		      	<li class="waves-effect waves-light">
+		      		<a href="#!">
+			      		<i class="material-icons">play_arrow</i>
+			      	</a>
+		      	</li>
+
+		      	<li class="waves-effect waves-light">
+		      		<a href="#!">
+			      		<i class="material-icons">fast_forward</i>
+			      	</a>
+		      	</li>
+		    </ul>
+	  	</div>
+
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+
+        <script type="text/javascript">
+            $('.button-collapse').sideNav({
+                    menuWidth: 300, // Default is 300
+                    edge: 'left', // Choose the horizontal origin
+                    closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                    draggable: true //, // Choose whether you can drag to open on touch screens,
+                    //onOpen: function(el) { /* Do Stuff */ }, 
+                    //onClose: function(el) { /* Do Stuff */ }, 
+                }
+            );
+
+            $(document).ready(function(){
+		      	$('.carousel').carousel();
+		    });
+        </script>
+    </body>
+</html>

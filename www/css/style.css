@@ -1,0 +1,15 @@
+.card-list {
+	padding-left: 17px !important;
+    padding-right: 17px !important;
+    padding-top: 10px !important;
+}
+
+.card-list .card {
+	margin-bottom: 65px;
+}
+
+.cover-prev {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
