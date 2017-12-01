@@ -14,20 +14,17 @@
     </head>
 
     <body>
-    	<!--div class="preloader-wrapper big active">
-    		<div class="spinner-layer spinner-blue-only">
-			  	<div class="circle-clipper left">
-		        	<div class="circle"></div>
-		      	</div>
-	      	</div>
-      	</div-->
-
-        <nav class="nav-extended red">
+        <nav class="nav-extended red navbar-fixed">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo center">Nome</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse">
                     <i class="material-icons">menu</i>
                 </a>
+                <a href="#" class="brand-logo center">Nome</a>
+
+                <a href="#" class="button-search">
+                    <i class="material-icons">search</i>
+                </a>
+                 
                 <ul class="side-nav" id="mobile-demo">
 
                     <li>
@@ -62,7 +59,7 @@
                     </li>
                     <li>
                         <a href="#!">
-                            <i class="material-icons">list</i> Playlists
+                            <i class="material-icons">queue_music</i> Playlists
                         </a>
                     </li>
                     <li>
@@ -93,126 +90,148 @@
             </div>
         </nav>
 
-        <!-- Aba Início -->
-        <div id="inicio" class="col s12">
-			<div class="carousel" style="height: 250px;">
-			    <a class="carousel-item" href="#one!">
-			    	<img src="img/mg-1.jpg">
+        <div id="content">
+
+	        <!-- Aba Início -->
+	        <div id="inicio" class="col s12">
+				<div class="carousel" style="height: 250px;">
+				    <a class="carousel-item" href="#one!">
+				    	<img src="img/mg-1.jpg">
+				    </a>
+				    <a class="carousel-item" href="#two!">
+				    	<img src="img/aa-1.jpg">
+				    </a>
+				    <a class="carousel-item" href="#three!">
+				    	<img src="img/es-1.jpg">
+				    </a>
+				    <a class="carousel-item" href="#four!">
+				    	<img src="img/metallica-1.jpg">
+				    </a>
+				    <a class="carousel-item" href="#five!">
+				    	<img src="img/bj-1.jpg">
+				    </a>
+			  	</div>
+	        </div>
+
+	        <!-- Aba Em Alta -->
+	        <div id="alta">
+	            <div class="row">
+	                <div class="col s12 card-list">
+
+	                    <!-- Primeiro Card -->
+	                    <div class="card">
+	                        <div class="card-image">
+	                            <img src="img/es-1.jpg">
+
+	                            <span class="card-title">Divide</span>
+
+	                            <a class="btn-floating halfway-fab waves-effect waves-light red">
+	                                <i class="material-icons">add</i>
+	                            </a>
+	                        </div>
+	                        <div class="card-content">
+	                            <p>Novo álbum de Ed Sheeran</p>
+	                        </div>
+	                    </div>
+
+	                    <!-- Segundo Card -->
+	                    <div class="card">
+	                        <div class="card-image">
+	                            <img src="img/aa-1.jpg">
+
+	                            <span class="card-title">The Black</span>
+
+	                            <a class="btn-floating halfway-fab waves-effect waves-light red">
+	                                <i class="material-icons">add</i>
+	                            </a>
+	                        </div>
+	                        <div class="card-content">
+	                            <p>Novo álbum do Asking Alexandria</p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+
+	        <!-- Aba Recomendados -->
+	        <div id="recomendados">
+	            <div class="row">
+	                <div class="col s6 card-list">
+	                    <div class="card">
+		                    <img src="img/aa-1.jpg" class="responsive-img">
+		                    <a class="btn-floating halfway-fab waves-effect waves-light red">
+		                        <i class="material-icons">add</i>
+		                    </a>
+	                	</div>
+	                </div>
+	                <div class="col s6 card-list">
+	                    <div class="card">
+		                    <img src="img/es-1.jpg" class="responsive-img">
+		                    <a class="btn-floating halfway-fab waves-effect waves-light red">
+		                        <i class="material-icons">add</i>
+		                    </a>
+	                	</div>
+	                </div>
+	                <div class="col s6 card-list">
+	                    <div class="card">
+		                    <img src="img/bj-1.jpg" class="responsive-img">
+		                    <a class="btn-floating halfway-fab waves-effect waves-light red">
+		                        <i class="material-icons">add</i>
+		                    </a>
+	                	</div>
+	                </div>
+	                <div class="col s6 card-list">
+	                    <div class="card">
+		                    <img src="img/metallica-1.jpg" class="responsive-img">
+		                    <a class="btn-floating halfway-fab waves-effect waves-light red">
+		                        <i class="material-icons">add</i>
+		                    </a>
+	                	</div>
+	                </div>
+	                <div class="col s6 card-list">
+	                    <div class="card">
+		                    <img src="img/mg-1.jpg" class="responsive-img">
+		                    <a class="btn-floating halfway-fab waves-effect waves-light red">
+		                        <i class="material-icons">add</i>
+		                    </a>
+	                	</div>
+	                </div>
+	            </div>
+	        </div>
+
+	        <!-- Mini Player -->
+	    	<div class="fixed-action-btn toolbar">
+			    <a class="btn-floating btn-large red">
+			      	<i class="large material-icons">equalizer</i>
 			    </a>
-			    <a class="carousel-item" href="#two!">
-			    	<img src="img/aa-1.jpg">
-			    </a>
-			    <a class="carousel-item" href="#three!">
-			    	<img src="img/es-1.jpg">
-			    </a>
-			    <a class="carousel-item" href="#four!">
-			    	<img src="img/metallica-1.jpg">
-			    </a>
-			    <a class="carousel-item" href="#five!">
-			    	<img src="img/bj-1.jpg">
-			    </a>
+			    <ul>
+			      	<li class="waves-effect waves-light cover-prev">
+			      		<img src="img/es-1.jpg" class="circle">
+			      	</li>
+
+			      	<li class="waves-effect waves-light">
+			      		<a href="#!">
+				      		<i class="material-icons">fast_rewind</i>
+				      	</a>
+			      	</li>
+
+			      	<li class="waves-effect waves-light">
+			      		<a href="#!" id="play">
+				      		<i class="material-icons">play_arrow</i>
+				      	</a>
+			      		<a href="#!" id="pause">
+				      		<i class="material-icons">pause</i>
+				      	</a>
+			      	</li>
+
+			      	<li class="waves-effect waves-light">
+			      		<a href="#!">
+				      		<i class="material-icons">fast_forward</i>
+				      	</a>
+			      	</li>
+			    </ul>
 		  	</div>
         </div>
-
-        <!-- Aba Em Alta -->
-        <div id="alta">
-            <div class="row">
-                <div class="col s12 card-list">
-
-                    <!-- Primeiro Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="img/es-1.jpg">
-
-                            <span class="card-title">Divide</span>
-
-                            <a class="btn-floating halfway-fab waves-effect waves-light red">
-                                <i class="material-icons">add</i>
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <p>Novo álbum de Ed Sheeran</p>
-                        </div>
-                    </div>
-
-                    <!-- Segundo Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="img/aa-1.jpg">
-
-                            <span class="card-title">The Black</span>
-
-                            <a class="btn-floating halfway-fab waves-effect waves-light red">
-                                <i class="material-icons">add</i>
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <p>Novo álbum do Asking Alexandria</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Aba Recomendados -->
-        <div id="recomendados">
-            <div class="row">
-                <div class="col s12 card-list">
-
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="img/aa-1.jpg">
-
-                            <span class="card-title">The Black</span>
-
-                            <a class="btn-floating halfway-fab waves-effect waves-light red">
-                                <i class="material-icons">add</i>
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <p>Novo álbum de Ed Sheeran</p>
-                        </div>
-                    </div>
-
-                	<h4 class="header">Ed Sheeran</h4>
-		            <div class="card">
-		                <div class="card-image">
-                            <img src="img/es-1.jpg">
-		                </div>
-		            </div>
-	            </div>
-            </div>
-        </div>
-
-        <!-- Mini Player -->
-    	<div class="fixed-action-btn toolbar">
-		    <a class="btn-floating btn-large red">
-		      	<i class="large material-icons">equalizer</i>
-		    </a>
-		    <ul>
-		      	<li class="waves-effect waves-light cover-prev"
-		      		style="background-image: url(img/es-1.jpg);">
-		      	</li>
-
-		      	<li class="waves-effect waves-light">
-		      		<a href="#!">
-			      		<i class="material-icons">fast_rewind</i>
-			      	</a>
-		      	</li>
-
-		      	<li class="waves-effect waves-light">
-		      		<a href="#!">
-			      		<i class="material-icons">play_arrow</i>
-			      	</a>
-		      	</li>
-
-		      	<li class="waves-effect waves-light">
-		      		<a href="#!">
-			      		<i class="material-icons">fast_forward</i>
-			      	</a>
-		      	</li>
-		    </ul>
-	  	</div>
 
         <!--Import jQuery before materialize.js-->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -225,12 +244,20 @@
                     closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
                     draggable: true //, // Choose whether you can drag to open on touch screens,
                     //onOpen: function(el) { /* Do Stuff */ }, 
-                    //onClose: function(el) { /* Do Stuff */ }, 
-                }
+                    //onClose: function(el) { /* Do Stuff */ },
+		      	}
             );
 
             $(document).ready(function(){
 		      	$('.carousel').carousel();
+
+		      	$('#play').click( function(){
+		      		$('#play').toggle(".hide");
+		      	});
+
+		      	$('#pause').click( function(){
+		      		$('#play').toggle(".show");
+		      	});
 		    });
         </script>
     </body>
