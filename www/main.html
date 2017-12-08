@@ -24,6 +24,15 @@
                 <a href="#" class="button-search">
                     <i class="material-icons">search</i>
                 </a>
+
+                <div id="search-bar">
+	                <form>
+	        			<div class="input-field">
+							<input id="search-input" type="search" required>
+							<i class="material-icons" id="close-search">close</i>
+						</div>
+					</form>
+				</div>
                  
                 <ul class="side-nav" id="mobile-demo">
 
@@ -236,29 +245,6 @@
         <!--Import jQuery before materialize.js-->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
-
-        <script type="text/javascript">
-            $('.button-collapse').sideNav({
-                    menuWidth: 300, // Default is 300
-                    edge: 'left', // Choose the horizontal origin
-                    closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-                    draggable: true //, // Choose whether you can drag to open on touch screens,
-                    //onOpen: function(el) { /* Do Stuff */ }, 
-                    //onClose: function(el) { /* Do Stuff */ },
-		      	}
-            );
-
-            $(document).ready(function(){
-		      	$('.carousel').carousel();
-
-		      	$('#play').click( function(){
-		      		$('#play').toggle(".hide");
-		      	});
-
-		      	$('#pause').click( function(){
-		      		$('#play').toggle(".show");
-		      	});
-		    });
-        </script>
+        <script type="text/javascript" src="js/functions.js"></script>
     </body>
 </html>

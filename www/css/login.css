@@ -1,0 +1,45 @@
+/* Login */
+.login header {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background: #1a1d1a;
+}
+
+.login header nav .brand-logo.right img,
+.login header nav .brand-logo.center img,
+.login header nav .brand-logo.left img {
+	min-width: 35px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.login header .section {
+	min-height: 100vh;
+	max-height: 100%;
+	width: 100%;
+
+	padding-top: 10vh;
+
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: rgba(0,0,0,0.5);
+}
+.login header .section #logo-login {
+	z-index: 1;
+	position: absolute;
+	width: 8%;
+	right: 20px;
+	top: 10px;
+}
+.login header .section .button-group {
+	padding-top: 60vh;
+	text-align: center;
+}
+	.login header .section .button-group a {
+		width: 80%;
+	}
+	.login header .section .button-group a:first-child {
+		margin-bottom: 20px;
+	}
