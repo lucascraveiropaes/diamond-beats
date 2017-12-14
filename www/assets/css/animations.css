@@ -1,0 +1,24 @@
+/* Border Radius Animation From Menu */
+
+	/* Remove Radius */
+	@-webkit-keyframes unRadius {
+	    from {
+	    	border-bottom-right-radius: 30px;
+		    border-bottom-left-radius: 30px;
+	    }
+	    to {
+	    	border-bottom-right-radius: 0px;
+		    border-bottom-left-radius: 0px;
+	    }
+	}
+
+	@keyframes unRadius {
+	    from {
+	    	border-bottom-right-radius: 30px;
+		    border-bottom-left-radius: 30px;
+	    }
+	    to {
+	    	border-bottom-right-radius: 0px;
+		    border-bottom-left-radius: 0px;
+	    }
+	}
