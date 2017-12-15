@@ -9,6 +9,9 @@
 
 	$("#close").click( function () {
 		$('.search-bar').removeClass('active');
+		$("#search-term").val("");
+		$("#search-results").css("display", "none");
+    	$(".after-menu").css("display", "block");
 	});
 // End
 

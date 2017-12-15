@@ -7,6 +7,7 @@
 
         <!--Import Google Icon Font -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 
         <!--Import CSS -->
         <link type="text/css" rel="stylesheet" href="../assets/css/materialize.css">
@@ -18,7 +19,7 @@
         <link rel="stylesheet" href="../assets/fonts/pe-icon-7-stroke/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
     </head>
 
-    <body class="main">
+    <body class="main" style="font-family: 'Noto Sans', sans-serif; font-weight: 600">
 
         <!-- Side Nav -->
         <ul class="side-nav" id="mobile-demo">
@@ -62,16 +63,18 @@
                         <i class="pe-7s-search black-text"></i>
                     </a>
 
-                    <div class="search-bar">
-                        <input type="text" name="search" class="input">
+                    <form class="search-bar" id="search-bar">
+                        <input type="text" name="search-term" id="search-term" class="input">
                         <i class="pe-7s-close" id="close"></i>
-                    </div>
+                    </form>
                 </div>
             </nav>
     	</header>
 
+        <div id="search-results"></div>
+
         <section class="after-menu">
-            <ul class="tabs">
+            <ul class="tabs" style="position: fixed">
                 <li class="tab col s4">
                     <a href="#sugestoes" class="active">Sugestões</a>
                 </li>
@@ -82,26 +85,166 @@
                     <a href="#alta">Em Alta</a>
                 </li>
             </ul>
-            <div class="row">
+
+            <div style="margin-bottom: 50px"></div>
+
+            <!-- Sugestões Tab -->
+            <div class="container" id="sugestoes">
                 <div class="col s12">
                     <div class="card-panel transparent">
-                        <img src="img/cover-1.jpg" class="thumbnail">
+                        <img src="img/sugestoes/cover-1.jpg" class="thumbnail">
                         <div class="content">
-                            <span class="title">GameShow</span>
-                            <span class="subtitle">by Two Door Cinema Club</span>
+                            <span class="title"><a href="search.html">GameShow</a></span>
+                            <span class="subtitle">by <a href="#">Two Door Cinema Club</a></span>
                         </div>
                     </div>
                 </div>
 
+                <hr class="simple-line-85">
+
                 <div class="col s12">
-                    <div class="card-panel card-panel-inverse transparent">
+                    <div class="card-panel transparent">
+                        <img src="img/sugestoes/cover-2.jpg" class="thumbnail">
                         <div class="content">
-                            <span class="title">GameShow</span>
-                            <span class="subtitle">by Two Door Cinema Club</span>
+                            <span class="title">Inside a Dream</span>
+                            <span class="subtitle">by Echosmith</span>
                         </div>
-                        <img src="img/cover-1.jpg" class="thumbnail">
                     </div>
                 </div>
+
+                <hr class="simple-line-85">
+
+                <div class="col s12">
+                    <div class="card-panel transparent">
+                        <img src="img/sugestoes/cover-3.jpg" class="thumbnail">
+                        <div class="content">
+                            <span class="title">Infinity</span>
+                            <span class="subtitle">by Against The Current</span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="simple-line-85">
+
+                <div class="col s12">
+                    <div class="card-panel transparent">
+                        <img src="img/sugestoes/cover-4.jpg" class="thumbnail">
+                        <div class="content">
+                            <span class="title">Just The Beginning</span>
+                            <span class="subtitle">by Grace Vanderwaal</span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="simple-line-85">
+
+                <div class="col s12">
+                    <div class="card-panel transparent">
+                        <img src="img/sugestoes/cover-5.jpg" class="thumbnail">
+                        <div class="content">
+                            <span class="title">All My Demons...</span>
+                            <span class="subtitle">by Aurora</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Descobrir Tab -->
+            <div class="container" id="descobrir">
+                <div class="col s12">
+                    <div class="card-panel transparent">
+                        <img src="img/descobrir/cover-1.jpg" class="thumbnail">
+                        <div class="content">
+                            <span class="title">Only Boy Awake</span>
+                            <span class="subtitle">by Meadows</span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="simple-line-85">
+
+                <div class="col s12">
+                    <div class="card-panel transparent">
+                        <img src="img/descobrir/cover-2.jpg" class="thumbnail">
+                        <div class="content">
+                            <span class="title">Dreaming Your Li...</span>
+                            <span class="subtitle">by Vance Joy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="simple-line-85">
+
+                <div class="col s12">
+                    <div class="card-panel transparent">
+                        <img src="img/descobrir/cover-3.jpg" class="thumbnail">
+                        <div class="content">
+                            <span class="title">The Noise</span>
+                            <span class="subtitle">by Castlecomer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="simple-line-85">
+
+                <div class="col s12">
+                    <div class="card-panel transparent">
+                        <img src="img/descobrir/cover-4.jpg" class="thumbnail">
+                        <div class="content">
+                            <span class="title">Sam's Town</span>
+                            <span class="subtitle">by The Killers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Em Alta Tab -->
+            <div class="container" id="alta">
+                <!--div class="col s12">
+                    <div class="card-panel transparent">
+                        <img src="img/alta/cover-1.jpg" class="thumbnail">
+                        <div class="content">
+                            <span class="title">Reputation</span>
+                            <span class="subtitle">by Taylor Swift</span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="simple-line-85">
+
+                <div class="col s12">
+                    <div class="card-panel transparent">
+                        <img src="img/alta/cover-2.jpg" class="thumbnail">
+                        <div class="content">
+                            <span class="title">Tell Me You Love Me</span>
+                            <span class="subtitle">by Demi Lovato</span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="simple-line-85">
+
+                <div class="col s12">
+                    <div class="card-panel transparent">
+                        <img src="img/alta/cover-3.jpg" class="thumbnail">
+                        <div class="content">
+                            <span class="title">Something Just Like...</span>
+                            <span class="subtitle">by The Chainsmokers & Coldplay</span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="simple-line-85">
+
+                <div class="col s12">
+                    <div class="card-panel transparent">
+                        <div class="content">
+                            <span class="title">Divide</span>
+                            <span class="subtitle">by Ed Sheeran</span>
+                        </div>
+                        <img src="img/alta/cover-4.jpg" class="thumbnail">
+                    </div>
+                </div-->
             </div>
         </section>
 
@@ -109,25 +252,6 @@
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="../assets/js/materialize.min.js"></script>
         <script type="text/javascript" src="../assets/js/diamond-beats.js"></script>
-
-        <!--script type="text/javascript">
-            $(document).ready(function() {
-                var url = "http://localhost/projetos/diamond-beats/main.php";
-
-                $.getJSON(url, function(result) {
-                    
-                    alert(result);
-
-                    $.each(result, function(i, user) {
-                        var nome = user.nome;
-                        var sobrenome = user.sobrenome;
-                        var email = user.email;
-
-                        $("#listview").append("<a class='item' href='form.html?nome=" + nome + "&sobrenome=" + sobrenome + "&email=" + email + "&price=" + price + "'><span class='item-note'></span>" + sobrenome + "<p>" + email + "</p></a>");
-                    });
-
-                });
-            });
-        </script-->
+        <script type="text/javascript" src="js/search.js"></script>
     </body>
 </html>
