@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+        <title>Diamond Beats</title>
+
+        <!--Import Google Icon Font -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!--Import CSS -->
+        <link type="text/css" rel="stylesheet" href="../assets/css/materialize.css">
+        <link type="text/css" rel="stylesheet" href="../assets/css/style.css">
+        <link type="text/css" rel="stylesheet" href="../assets/css/gradients.css">
+        <link type="text/css" rel="stylesheet" href="../assets/css/animations.css">
+
+        <!-- Import Font -->
+        <link rel="stylesheet" href="../assets/fonts/pe-icon-7-stroke/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    </head>
+
+    <body class="main">
+
+        <!-- Side Nav -->
+        <ul class="side-nav" id="mobile-demo">
+            <li>
+                <div class="user-view center">
+                    <div class="background">
+                        <img src="../assets/img/icons/logo.png">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a class="waves-effect waves-light btn-large" href="main.html">Início</a>
+            </li>
+            <li>
+                <a class="waves-effect waves-light btn-large transparent" href="#">Artistas</a>
+            </li>
+            <li>
+                <a class="waves-effect waves-light btn-large transparent" href="#">Álbuns</a>
+            </li>
+            <li>
+                <a class="waves-effect waves-light btn-large transparent" href="#">Playlists</a>
+            </li>
+            <li>
+                <a class="waves-effect waves-light btn-large transparent" href="#">Downloads</a>
+            </li>
+            <li>
+                <a class="waves-effect waves-light btn-large transparent" href="#">Configurações</a>
+            </li>
+        </ul>
+
+    	<header>
+            <nav class="navbar-fixed white">
+                <div class="nav-wrapper">
+                    <a href="#" class="waves-effect waves-circle-2 waves-light left nav-link button-menu" data-activates="mobile-demo">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+                    </a>
+
+                    <a href="#" class="waves-effect waves-circle-2 waves-light right nav-link" id="search">
+                        <i class="pe-7s-search black-text"></i>
+                    </a>
+
+                    <div class="search-bar">
+                        <input type="text" name="search" class="input">
+                        <i class="pe-7s-close" id="close"></i>
+                    </div>
+                </div>
+            </nav>
+    	</header>
+
+        <section class="after-menu">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card-panel primary-gradient">
+                        <span>Primary Gradient</span>
+                    </div>
+                </div>
+                <div class="col s12">
+                    <div class="card-panel red-gradient">
+                        <span>Red Gradient</span>
+                    </div>
+                </div>
+                <div class="col s12">
+                    <div class="card-panel pink-gradient">
+                        <span>Pink Gradient</span>
+                    </div>
+                </div>
+                <div class="col s12">
+                    <div class="card-panel baby-gradient">
+                        <span>Baby Gradient</span>
+                    </div>
+                </div>
+                <div class="col s12">
+                    <div class="card-panel blue-gradient">
+                        <span>Blue Gradient</span>
+                    </div>
+                </div>
+                <div class="col s12">
+                    <div class="card-panel blue-darker-gradient">
+                        <span>Blue Darker Gradient</span>
+                    </div>
+                </div>
+                <div class="col s12">
+                    <div class="card-panel black-gradient">
+                        <span>Black Gradient</span>
+                    </div>
+                </div>
+                <div class="col s12">
+                    <div class="card-panel grey-gradient">
+                        <span>Grey Gradient</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../assets/js/materialize.min.js"></script>
+        <script type="text/javascript" src="../assets/js/diamond-beats.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var url = "http://localhost/projetos/diamond-beats/main.php";
+
+                $.getJSON(url, function(result) {
+                    
+                    alert(result);
+
+                    $.each(result, function(i, user) {
+                        var nome = user.nome;
+                        var sobrenome = user.sobrenome;
+                        var email = user.email;
+
+                        $("#listview").append("<a class='item' href='form.html?nome=" + nome + "&sobrenome=" + sobrenome + "&email=" + email + "&price=" + price + "'><span class='item-note'></span>" + sobrenome + "<p>" + email + "</p></a>");
+                    });
+
+                });
+            });
+        </script>
+    </body>
+</html>

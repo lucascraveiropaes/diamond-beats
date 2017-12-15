@@ -1,0 +1,71 @@
+.primary-gradient {
+	background: #0fb588;
+	background: -webkit-linear-gradient(145deg, #0fb588 , #46b9c7);
+	background: -o-linear-gradient(145deg, #0fb588 , #46b9c7);
+	background: -moz-linear-gradient(145deg, #0fb588 , #46b9c7);
+	background: linear-gradient(145deg, #0fb588 , #46b9c7);
+	color: #FFF !important;
+}
+
+.red-gradient {
+	background: #42e2ef;
+	background: -webkit-linear-gradient(145deg, #f40b36, #760b31);
+	background: -o-linear-gradient(145deg, #f40b36, #760b31);
+	background: -moz-linear-gradient(145deg, #f40b36, #760b31);
+	background: linear-gradient(145deg, #f40b36, #760b31);
+	color: #FFF !important;
+}
+
+.pink-gradient {
+	background: #f693a5;
+	background: -webkit-linear-gradient(145deg, #f693a5, #c813c9);
+	background: -o-linear-gradient(145deg, #f693a5, #c813c9);
+	background: -moz-linear-gradient(145deg, #f693a5, #c813c9);
+	background: linear-gradient(145deg, #f693a5, #c813c9);
+	color: #FFF !important;
+}
+
+.baby-gradient {
+	background: #fbc2eb;
+	background: -webkit-linear-gradient(145deg, #fbc2eb, #a6c1ee);
+	background: -o-linear-gradient(145deg, #fbc2eb, #a6c1ee);
+	background: -moz-linear-gradient(145deg, #fbc2eb, #a6c1ee);
+	background: linear-gradient(145deg, #fbc2eb, #a6c1ee);
+	color: #FFF !important;
+}
+
+.blue-gradient {
+	background: #4facfe;
+	background: -webkit-linear-gradient(145deg, #4facfe, #00f2fe);
+	background: -o-linear-gradient(145deg, #4facfe, #00f2fe);
+	background: -moz-linear-gradient(145deg, #4facfe, #00f2fe);
+	background: linear-gradient(145deg, #4facfe, #00f2fe);
+	color: #FFF !important;
+}
+
+.blue-darker-gradient {
+	background: #30cfd0;
+	background: -webkit-linear-gradient(145deg, #30cfd0, #330867);
+	background: -o-linear-gradient(145deg, #30cfd0, #330867);
+	background: -moz-linear-gradient(145deg, #30cfd0, #330867);
+	background: linear-gradient(145deg, #30cfd0, #330867);
+	color: #FFF !important;
+}
+
+.black-gradient {
+	background: #434343;
+	background: -webkit-linear-gradient(145deg, #434343, #000);
+	background: -o-linear-gradient(145deg, #434343, #000);
+	background: -moz-linear-gradient(145deg, #434343, #000);
+	background: linear-gradient(145deg, #434343, #000);
+	color: #FFF !important;
+}
+
+.grey-gradient {
+	background: #868f96;
+	background: -webkit-linear-gradient(145deg, #868f96, #596164);
+	background: -o-linear-gradient(145deg, #868f96, #596164);
+	background: -moz-linear-gradient(145deg, #868f96, #596164);
+	background: linear-gradient(145deg, #868f96, #596164);
+	color: #FFF !important;
+}
