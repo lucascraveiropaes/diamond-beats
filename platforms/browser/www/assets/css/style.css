@@ -311,12 +311,16 @@ header.top-panel {
 		border-radius: 6px;
 		vertical-align: middle;
 	}
+	.card-list.transparent .content,
+	.card-panel.transparent .content {
+		color: #000;
+	}
 	.card-list .content,
 	.card-panel .content {
 		padding-left: 20px;
 		width: 70%;
 		float: right;
-		color: #000;
+		color: #fff;
 	}
 	.card-list .content a,
 	.card-panel .content a {

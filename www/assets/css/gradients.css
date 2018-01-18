@@ -31,7 +31,7 @@
 	background: -o-linear-gradient(145deg, #fbc2eb, #a6c1ee);
 	background: -moz-linear-gradient(145deg, #fbc2eb, #a6c1ee);
 	background: linear-gradient(145deg, #fbc2eb, #a6c1ee);
-	color: #FFF !important;
+	color: #000 !important;
 }
 
 .blue-gradient {
